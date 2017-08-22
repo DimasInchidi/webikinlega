@@ -65,7 +65,7 @@ def index(request):
         ),
         'testi': (
             {
-                'gambar': 'http://samevine.co.uk/assets/uploads/2015/05/Testimony.jpg',
+                'gambar': 'https://shadesofgrace.org/wp-content/uploads/share-your-testimony.jpg',
             },
         ),
         'foot': {
