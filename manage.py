@@ -1,10 +1,9 @@
 #!/usr/bin/env python
 import os
 import sys
-import dj_database_url
 
 if __name__ == "__main__":
-    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "src.settings.{{ deploy }}")
+    os.environ.setdefault("DJANGO_SETTINGS_MODULE", "src.settings." + os.environ.get("deploy"))
 
     from django.core.management import execute_from_command_line
 
