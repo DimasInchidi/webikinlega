@@ -1,0 +1,25 @@
+<footer class="page-footer green" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="col l9 s12">
+                <h5 class="white-text">Tentang Kami</h5>
+                <p class="grey-text text-lighten-4">{{ foot.about }}</p>
+
+
+            </div>
+            <div class="col l3 s12">
+                <h5 class="white-text">Kontak</h5>
+                <ul>
+                    {% for k in foot.kontak %}
+                        <li><a class="white-text" href="{{ k.0 }}">{{ k.1 }}</a></li>
+                    {% endfor %}
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="footer-copyright">
+        <div class="container">
+            {{ nama }} 2017
+        </div>
+    </div>
+</footer>

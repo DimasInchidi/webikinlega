@@ -1,0 +1,17 @@
+<div class="container" id="about">
+    <div class="section">
+        {% for ra in row_about %}
+            <div class="row">
+                {% for a in ra %}
+                    <div class="col s12 m3">
+                        <div class="icon-block">
+                            <h2 class="center brown-text"><i class="material-icons">{{ a.icon }}</i></h2>
+                            <h5 class="center">{{ a.title }}</h5>
+                            <p class="light">{{ a.desc }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+            </div>
+        {% endfor %}
+    </div>
+</div>

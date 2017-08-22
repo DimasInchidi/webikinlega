@@ -1,0 +1,41 @@
+<nav class="green" role="navigation">
+    <div class="nav-wrapper container">
+        <a id="logo-container" href="#" class="brand-logo">{{ nama }}</a>
+        <ul class="right hide-on-med-and-down">
+            {% if row_about %}
+                <li><a href="#about">Tentang</a></li>
+            {% endif %}
+
+            {% if row_barang %}
+                <li><a href="#goods">Katalog</a></li>
+            {% endif %}
+
+            {% if testi %}
+                <li><a href="#testi">Testimoni</a></li>
+            {% endif %}
+
+            {% if foot %}
+                <li><a href="#contact">Kontak</a></li>
+            {% endif %}
+        </ul>
+
+        <ul id="nav-mobile" class="side-nav">
+            {% if row_about %}
+                <li><a href="#about">Tentang</a></li>
+            {% endif %}
+
+            {% if row_barang %}
+                <li><a href="#goods">Katalog</a></li>
+            {% endif %}
+
+            {% if testi %}
+                <li><a href="#testi">Testimoni</a></li>
+            {% endif %}
+
+            {% if foot %}
+                <li><a href="#contact">Kontak</a></li>
+            {% endif %}
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+</nav>

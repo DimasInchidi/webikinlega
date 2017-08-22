@@ -1,0 +1,22 @@
+<div class="container" id="testi">
+    <div class="section">
+
+        <div class="row">
+            <div class="col s12 center">
+                <h3><i class="mdi-content-send brown-text"></i></h3>
+                <h4>Testimoni</h4>
+                <div class="slider">
+                    <ul class="slides">
+                        {% for t in testi %}
+                            <li>
+                                <img src="{{ t.gambar }}"
+                                     width="250">
+                            </li>
+                        {% endfor %}
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,32 @@
+<div class="container">
+    <div class="section" id="goods">
+
+        <div class="row">
+            <div class="col s12 center">
+                <h3><i class="mdi-content-send brown-text"></i></h3>
+                <h4>Kami menjual</h4>
+                {% for rb in row_barang %}
+                    <div class="row">
+                        {% for b in rb %}
+                            <div class="col s12 m4">
+                                <div class="card waves-effect">
+                                    <div class="card-image">
+                                        <img src="{{ b.gambar }}">
+                                        <span class="card-title">{{ b.nama }}</span>
+                                    </div>
+                                    <div class="card-content">
+                                        <p>{{ b.keterangan }}</p>
+                                    </div>
+                                    <div class="card-action">
+                                        {{ b.harga }}
+                                    </div>
+                                </div>
+                            </div>
+                        {% endfor %}
+                    </div>
+                {% endfor %}
+            </div>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>{{ nama }} - {{ usaha }}</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="{% static 'css/materialize.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="{% static 'css/style.css' %}" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="{% static 'js/materialize.min.js' %}"></script>
+    <script src="{% static 'js/init.js' %}"></script>
+</head>
+<body>
+{% include 'contents/header.html' %}
+{% if slogan %}
+    {% include 'contents/title.html' %}
+{% endif %}
+
+{% if row_about %}
+    {% include 'contents/about.html' %}
+    {% include 'contents/border.html' %}
+{% endif %}
+
+{% if row_barang %}
+    {% include 'contents/goods.html' %}
+    {% include 'contents/border.html' %}
+{% endif %}
+
+{% if testi %}
+    {% include 'contents/testimony.html' %}
+    {% include 'contents/border.html' %}
+{% endif %}
+
+{% if foot %}
+    {% include 'contents/footer.html' %}
+{% endif %}
+</body>
+</html>
