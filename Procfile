@@ -1,1 +1,1 @@
-web: gunicorn SkripsiLara.wsgi
+web: gunicorn src.wsgi
