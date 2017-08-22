@@ -1,7 +1,7 @@
 from src.settings.base import *
 import dj_database_url
 
-SECRET_KEY = {{ secret_key }}
+SECRET_KEY = "{{ secret_key }}"
 DEBUG = False
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 ALLOWED_HOSTS = []
@@ -21,4 +21,3 @@ AUTH_PASSWORD_VALIDATORS = [
         'NAME': 'django.contrib.auth.password_validation.NumericPasswordValidator',
     },
 ]
-
